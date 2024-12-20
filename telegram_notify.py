@@ -23,4 +23,8 @@ def send_telegram(args):
 
 if __name__ == "__main__":
     args = parse_args()
+
+    if args["message"] == "":        
+        exit()
+
     send_telegram(args)
